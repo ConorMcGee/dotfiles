@@ -1,0 +1,43 @@
+/****************
+ * cell and row *
+ ****************/
+.cell {
+    border-width: 0;
+    border-radius: 0;
+}
+
+.cell:selected,
+.cell:selected:focus {
+    background-image: none;
+    font-weight: bold;
+}
+
+
+.cell:selected.image:hover {
+    color: shade(@theme_selected_fg_color_app, 1.15);
+}
+
+
+GtkTreeView.cell.button {
+    color: @theme_fg_color;
+}
+
+GtkTreeView.cell.button:hover {
+    color: @theme_selected_fg_color_app;
+}
+
+row:selected,
+row:selected:hover,
+row:selected:focus {
+    border-style: solid;
+    border-color: shade(@theme_selected_fg_color_app, 0.9);
+    background-color: shade(@button_bg_hover_color, 1.05);
+    color: @theme_selected_fg_color_app;
+    background-image: none;
+    font-weight: bold;
+}
+
+.cell:hover{
+  background-color: shade(@button_bg_hover_color, 1.05);
+  color: @theme_fg_color;
+}

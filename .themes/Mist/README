@@ -1,0 +1,28 @@
+This is the Mist theme by theRealPadster (Padster).
+
+Inspired by the look of the GDM3 login manager, the goal is to have a theme that is as fully transparent and out-of-the-way as possible. This means a panel that blends right into the desktop, simple flat, transparent buttons, and the bare minimum when it comes to menus and elements that overlap the workspace.
+
+The theme works on GNOME-Shell 3.14, 3.16, 3.18, and 3.20; use whichever version you need. 
+
+Credits: 
+Wallpapers used in preview:
+-S.2 - by bo0xvn (http://bo0xvn.deviantart.com/art/S-2-413930214)
+-68.II by bo0xvn (http://bo0xvn.deviantart.com/art/68-II-341330938)
+-Grad by asiaonly(http://asiaonly.deviantart.com/art/Grad-465586687)
+-A few other wallpapers I found online with no names or authors
+Downloads in preview: 
+-.8.IV by bo0xvn (http://bo0xvn.deviantart.com/art/8-IV-437041734)
+-.29.IV by bo0xvn (http://bo0xvn.deviantart.com/art/29-IV-444891577)
+Music in preview:
+Jonathan Coulton's Greatest Hit Plus 13 Other Songs (http://www.jonathancoulton.com/wiki/Jonathan_Coulton%27s_Greatest_Hit_%28Plus_13_Other_Songs%29)
+Cash Cash - Take Me Home (feat. Bebe Rexha) - https://play.google.com/store/music/album/Cash_Cash_Take_Me_Home_feat_Bebe_Rexha?id=Beavzz7imldy2cocg4cbraoeuku&hl=en
+
+There are a couple known minor bugs in the GNOME 3.14 version, which don't show up in the 3.16 version:
+-Occasionally, a modal dialog will have a full black background instead of dimming
+-The panel clock has no shadow until you first mouse over it
+-The date label doesn't show up until the second time you open the calendar popup
+
+If you have a fix for a bug, please share it with me so I can update it.
+The theme is on GitHub at https://github.com/theRealPadster/Mist-theme
+
+License: CC-BY-NC-SA

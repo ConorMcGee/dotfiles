@@ -1,0 +1,60 @@
+/**************
+ * List boxes *
+ **************/
+
+.list-row {
+	font-weight: normal;
+	padding: 6px;
+	transition: 100ms linear;
+}
+
+.sidebar .list-row *{
+    padding: 0;
+    padding-left: 4px;
+}
+
+.list-row.button {
+	font-weight: normal;
+	background-color: @theme_bg_color;
+	color: @theme_fg_color;
+}
+
+.list-row.button:hover,
+.list-row:hover {
+    background-color: shade(@button_bg_hover_color, 1.05);
+}
+
+.list-row.button:active,
+.list-row.button:active:hover {
+    color: @theme_fg_col;
+    background-color: shade(@theme_bg_color, 0.8);
+}
+
+.list-row.button:checked {
+    color: @theme_selected_fg_color_app;
+
+}
+
+.list-row.button:selected,
+.list-row.button:selected:hover,
+.list-row.button:focus,
+.list-row.button:focus:hover {
+    outline-color: alpha(@theme_selected_fg_color_app, 0.3);
+}
+
+.list-row.button:selected,
+.list-row:selected {
+	background-color: shade(@button_bg_hover_color, 1.05);
+    color: @theme_selected_fg_color_app;
+    outline-color: alpha(@theme_selected_fg_color_app, 0.3);
+}
+
+.list-row.button:selected:hover {
+    background-color: shade(@button_bg_color, 1.05);
+    color: @theme_selected_fg_color_app;
+}
+
+.list-row.button:selected:active:hover {
+    color: @theme_selected_fg_color_app;
+    background-color: shade(@button_bg_color, 0.97);
+}

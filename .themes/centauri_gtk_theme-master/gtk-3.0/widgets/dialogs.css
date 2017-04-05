@@ -1,0 +1,35 @@
+/***********
+ * Dialogs *
+ ***********/
+.message-dialog .titlebar,
+.message-dialog .titlebar:backdrop {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+.message-dialog.csd .dialog-action-area .button {
+    padding: 6px;
+    border-radius: 0;
+    background-color: @button_bg_color;
+    box-shadow: none;
+    border: solid 1px transparent;
+}
+
+.message-dialog.csd .dialog-action-area .button:last-child {
+    border-right-color: transparent;
+}
+
+.message-dialog.csd .dialog-action-area .button:hover {
+    background-color: shade (@button_bg_color, 1.5);
+    border: solid 1px shade (@theme_bg_color, 0.75);
+    color: ;
+}
+
+.message-dialog.csd .dialog-action-area .button:active,
+.message-dialog.csd .dialog-action-area .button:checked,
+.message-dialog.csd .dialog-action-area .button:active:focus,
+.message-dialog.csd .dialog-action-area .button:checked:focus {
+    color: @theme_bg_color;
+    background-color: shade(@theme_selected_fg_color_app, 1.15);
+    border: solid 1px shade (@theme_selected_fg_color_app, 1.15);
+}

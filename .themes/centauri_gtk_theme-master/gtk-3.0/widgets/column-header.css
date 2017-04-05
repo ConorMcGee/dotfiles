@@ -1,0 +1,36 @@
+/*****************
+ * column-header *
+ *****************/
+column-header .button,
+column-header .button:active {
+    border-width: 0 0px 0px 1px;
+    border-color: shade(@theme_base_color, 0.95);
+    border-radius: 0;
+    border-style: solid;
+}
+
+column-header .button,
+column-header .button:active,
+column-header .button:focus,
+column-header .button:active:focus {
+    border-color: shade(, 0.95);
+    border-bottom-color: shade(, 0.9);
+    background-color: shade(, 0.97);
+    background-image: none;
+    color: ;
+}
+
+column-header .button:hover,
+column-header .button:active:hover,
+column-header .button:hover:focus,
+column-header .button:active:hover:focus {
+    border-color: shade(, 0.9);
+    border-bottom-color: shade(, 0.8);
+    background-color: shade(, 0.99);
+    background-image: none;
+    color: @theme_selected_fg_color_app;
+}
+
+column-header:last-child .button {
+    border-width: 0 0 1px 0;
+}
