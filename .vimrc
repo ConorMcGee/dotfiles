@@ -74,10 +74,10 @@ autocmd BufRead,BufNewFile *.alph set filetype=alph
 
 " Solarized stuff
 syntax enable
-let g:solarized_termcolors=16
-se t_Co=16
 set background=dark
 colorscheme solarized
+" let g:solarized_termcolors=256
+" se t_Co=256
 
 " Swap colon and semi-colon for command purposes
 noremap ; :
