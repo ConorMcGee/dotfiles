@@ -80,6 +80,8 @@ fi
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+alias python=python3.6
+alias python3=python3.6
 
 fignore=(.pyc)
 
@@ -111,3 +113,12 @@ dcleanup(){
     docker rmi $(docker images --filter dangling=true -q 2>/dev/null) 2>/dev/null
 }
 alias config='/usr/bin/git --git-dir=/home/conor/.dotfiles/ --work-tree=/home/conor'
+
+fpath=(~/.zsh/completion $fpath)
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /home/conor/node_modules/tabtab/.completions/serverless.zsh ]] && . /home/conor/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /home/conor/node_modules/tabtab/.completions/sls.zsh ]] && . /home/conor/node_modules/tabtab/.completions/sls.zsh
