@@ -1,12 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="kennethreitz"
 ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -52,6 +50,7 @@ plugins=(git docker dnf)
 # User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH=/usr/local/Cellar:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -63,7 +62,7 @@ export LANG=en_US.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -80,8 +79,8 @@ fi
 # Example aliases
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python=python3.6
-alias python3=python3.6
+alias python=python3.7
+alias python3=python3.7
 
 fignore=(.pyc)
 
@@ -122,3 +121,9 @@ fpath=(~/.zsh/completion $fpath)
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /home/conor/node_modules/tabtab/.completions/sls.zsh ]] && . /home/conor/node_modules/tabtab/.completions/sls.zsh
+
+# ruby stuff
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
